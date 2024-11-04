@@ -1,3 +1,6 @@
 .vscode
 fastapi-genai/.env
 fastapi-genai/code/files
+**/__pycache__/**
+*/__pycache__/*
+fastapi-genai/.venv
