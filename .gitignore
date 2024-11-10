@@ -4,3 +4,5 @@ fastapi-genai/code/files
 **/__pycache__/**
 */__pycache__/*
 fastapi-genai/.venv
+fastapi-genai-faiss/.env
+genai-faiss-reactagent/.venv
