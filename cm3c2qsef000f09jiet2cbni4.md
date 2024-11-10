@@ -11,11 +11,11 @@ tags: openai, promptengineering, langchain, faiss, react-agent
 
 Faturas de energia geralmente possuem uma ou duas páginas, o que facilita o processamento. Entretanto, ao lidarmos com documentos maiores, a necessidade de otimizar a consulta se torna mais evidente. Neste contexto, a estratégia de busca vetorial em documentos é uma solução poderosa, permitindo que o modelo se concentre nas seções mais relevantes. Para isso, utilizamos o FAISS, uma ferramenta desenvolvida pelo Facebook, que organiza e filtra o texto em vetores, garantindo que apenas os trechos essenciais sejam enviados ao modelo. A combinação com o Agent React, que introduz uma camada de raciocínio, permite respostas contextualizadas e precisas, tornando essa abordagem extremamente eficiente para documentos extensos.
 
-## FAISS
+## [FAISS](https://ai.meta.com/tools/faiss/)
 
 O FAISS (Facebook AI Similarity Search) é uma biblioteca de busca vetorial que permite encontrar vetores semelhantes em grandes conjuntos de dados de maneira rápida e eficiente. Ele utiliza funções de similaridade, como a similaridade do cosseno, para medir a proximidade entre vetores. A similaridade do cosseno calcula o ângulo entre os vetores, identificando o quão semelhantes eles são com base em sua orientação, o que é particularmente útil para dados textuais ou embeddings de alta dimensão. Essas funcionalidades tornam o FAISS uma escolha poderosa para sistemas que exigem correspondência rápida e precisa entre dados, como buscas em documentos, recomendações e análise de similaridade.
 
-## React Agent
+## [React Agent](https://python.langchain.com/v0.1/docs/modules/agents/agent_types/react/)
 
 **React Agent** é uma ferramenta do LangChain que combina múltiplos agentes para tomar decisões mais inteligentes ao interagir com modelos de linguagem. Ele aplica uma abordagem de raciocínio, permitindo que o modelo execute tarefas complexas, tomando decisões baseadas em informações extraídas de dados ou interações anteriores, sem precisar de intervenções externas. Além disso, o React Agent consegue integrar e usar ferramentas externas, o que amplia sua capacidade de realizar tarefas como consultas a bancos de dados, APIs e outros sistemas, tornando-o ainda mais poderoso.
 
