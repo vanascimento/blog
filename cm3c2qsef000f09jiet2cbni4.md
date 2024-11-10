@@ -38,6 +38,8 @@ Nosso roteiro será o seguinte:
 4. **Preparar o Agente para execução**: Por fim, configuraremos e prepararemos o Agente React para execução, garantindo que ele esteja pronto para realizar as consultas e raciocínios necessários.
     
 
+## Mãos à obra
+
 Certifique-se de que o arquivo .env esteja no diretório do projeto, configurado com sua `OPENAI_API_KEY` válida.
 
 ```python
