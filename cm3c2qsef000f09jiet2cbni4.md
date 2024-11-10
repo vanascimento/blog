@@ -5,7 +5,6 @@ cuid: cm3c2qsef000f09jiet2cbni4
 slug: como-integrar-langchain-faiss-e-reactagent-para-otimizar-busca-textual-em-llms
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1731271881928/8b743364-4904-436d-8b01-038792803e21.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1731272116556/a7ce3d6f-aa2f-4668-9690-4b9b938a180d.png
-tags: openai, promptengineering, langchain, faiss, react-agent
 
 ---
 
