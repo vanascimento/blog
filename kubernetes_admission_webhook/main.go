@@ -7,6 +7,6 @@ import (
 
 func main() {
   r := gin.Default()
-  r.GET("/validate-deployment", handlers.ValidateDeploymentHandler)
+  r.POST("/admission-deployment", handlers.ValidateDeploymentHandler)
   r.Run() 
 }

@@ -12,8 +12,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-const MAX_CPU_VALUE int64 = 100
-const MAX_MEMORY_VALUE int64 = 100
+const MAX_CPU_VALUE int64 = 100 // 100m
+const MAX_MEMORY_VALUE int64 = 250_000_000 // 250MB
 const MAX_REPLICAS int32 = 2
 
 // validateResourceContainers validates the CPU and memory resource requests of containers in a deployment.
@@ -25,7 +25,7 @@ const MAX_REPLICAS int32 = 2
 // If all values are within the limits, nil is returned.
 func validateResourceContainers(deployment appsv1.Deployment) error {
 	for _, container := range deployment.Spec.Template.Spec.Containers {
-		cpuValue := container.Resources.Requests.Cpu().Value()
+		cpuValue := container.Resources.Requests.Cpu().MilliValue()
 		memoryValue := container.Resources.Requests.Memory().Value()
 		if cpuValue > MAX_CPU_VALUE {
 			return fmt.Errorf("cpu request is too high, the maximum value is %f and you provided %f", MAX_CPU_VALUE, cpuValue)

@@ -11,13 +11,13 @@ webhooks:
           operator: In
           values: ["production"]
     rules:
-      - operations: ["CREATE", "UPDATE", "DELETE"]
+      - operations: ["CREATE", "UPDATE"]
         apiGroups: ["apps"]
         apiVersions: ["v1"]
         resources: ["deployments"]
         scope: "Namespaced"
     clientConfig:
-      url: https://e10d-2804-7f1-e283-f1b-183e-e532-1259-32a8.ngrok-free.app/admission-deployment
+      url: https://5e8f-2804-7f1-e283-f1b-287f-d0f0-3ca1-54ca.ngrok-free.app/admission-deployment
     admissionReviewVersions: ["v1"]
     sideEffects: None
     timeoutSeconds: 30
